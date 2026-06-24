@@ -712,7 +712,7 @@ section{
    CONTACT SECTION
 =================================== */
 
-.contact-section{
+..contact-section{
     background:#181818;
 }
 
@@ -726,14 +726,14 @@ section{
 .form-control{
     background:#222;
     border:none;
-    color:white;
+    color:#fff; /* Text color while typing */
     padding:14px;
     border-radius:12px;
 }
 
 .form-control:focus{
     background:#222;
-    color:white;
+    color:#fff;
     box-shadow:none;
     border:1px solid var(--primary);
 }
@@ -754,6 +754,28 @@ textarea.form-control{
 .contact-info i{
     color:var(--primary);
     margin-right:10px;
+}
+
+/* Placeholder Color */
+.form-control::placeholder{
+    color:#ffffff;
+    opacity:1;
+}
+
+.form-control::-webkit-input-placeholder{
+    color:#ffffff;
+}
+
+.form-control::-moz-placeholder{
+    color:#ffffff;
+}
+
+.form-control:-ms-input-placeholder{
+    color:#ffffff;
+}
+
+.form-control::-ms-input-placeholder{
+    color:#ffffff;
 }
 
 /* ===================================
